@@ -12,6 +12,7 @@ def getAllPokemon():
     return allPokemonList  
 
 def PopulatePokemonDetails(pokemonList):
+    #TODO change to batch processing
     fullList = []
     print('start')
     for i in pokemonList:
@@ -20,3 +21,4 @@ def PopulatePokemonDetails(pokemonList):
         # print(result)
         fullList.append(result)
     print(fullList)    
+    return fullList

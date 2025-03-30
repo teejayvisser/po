@@ -1,6 +1,11 @@
 import test
 
+#get all base pokemon to use for data manipulation
+base_pokemon =test.getAllPokemon()
 
-basePokemon =test.getAllPokemon()
+full_list = test.PopulatePokemonDetails(base_pokemon)
 
-test.PopulatePokemonDetails(basePokemon)
+
+#start sort pokemon into primary types
+
+#sort pokemon into secondary types
