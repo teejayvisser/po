@@ -18,18 +18,16 @@ Requirements:
 
 
 steps needed for data seed
-PLAAAAAAAAAAAAAAN
 
 
-1. create data layer for api calls using request api
-2.  create relational db(in memory or docker instance?) for all tables associated with pokemon
-3. create data iterator to get all pokemon (cycle and store till done)
-4. create data iterator to get all pokemon linked data data by pokemon id (only required to run once)
-5. create data layer to access my db
-6. create manager layer for filter calls / categories
-7. create docker compose to run everything
-8. unit tests to validate creation process?
-9. unit tests to validate categories?
+1. create data layer for api calls using request api - python does not require the same scaffolding as c#
+2. create relational db(in memory or docker instance?) for all tables associated with pokemon - not doing this as taking everything into a temp db may be overkill 
+3. create data iterator to get all pokemon (cycle and store till done) - no db to store in will be stored in local variables instead
+4. create data iterator to get all pokemon linked data data by pokemon id (only required to run once) - this changed as the beginning methodology no longer calls all pokemon
+5. create data layer to access my db - no db not necessary
+6. create manager layer for filter calls / categories 
+7. create docker compose to run everything - not necessary as it is only teh script now 
+8. unit tests? 
 
 
 
@@ -43,11 +41,9 @@ notes of places to look for (links)
 
 concerns
 
-~how to display data after fetched
-~does an in memory db actually persist the data while the app is running
-~how do i even run this
-~do i create a front end
-~do i create docker containers with a compose in order to spin everything up together
-~how do python scripts interact with js?
-~do i use django / flask in this dev showcase?
+~how to display data after fetched - show in terminal / save to json
+~does an in memory db actually persist the data while the app is running - opted not to use in memory with time constraints as well as slow performance
+~do i create a front end - no
+~do i create docker containers with a compose in order to spin everything up together - only in the event a db container is required otherwise may be pointless 
+~do i use django / flask in this dev showcase? - no opted to keep is simple 
 ~https://gist.github.com/ruimaranhao/4e18cbe3dad6f68040c32ed6709090a3
