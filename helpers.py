@@ -62,7 +62,7 @@ def add_pokemon_to_list(pokemon_by_type,all_pokemon_primary , all_pokemon_second
 def add_singular_pokemon_to_list(pokemon,poke_type,all_pokemon):
     '''this method populates the pokemon dicts where specefic pokemon are required'''
     poke_name = pokemon['pokemon']['name']
-        #first cheeck if type is in list 
+        #first check if type is in list 
     if(poke_type in all_pokemon):
         all_pokemon[poke_type].append(poke_name)
     else:
